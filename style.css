@@ -37,28 +37,37 @@ a:hover{
     transform: translateY(-100%);
 }
 
-.sticky-header.visible{
+.sticky-header.visible {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-}
-
-.sticky-header.docked {
-    position: static;
-    transform: none;
-}
+  }
 
 .logo{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: gold;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
 }
+
+.logo.docked {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
 
 .links{
     background-color: #4d004d;
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
 }
 
 .logo-text{
@@ -105,8 +114,8 @@ a:hover{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .carousel-item img {
@@ -162,6 +171,40 @@ a:hover{
         flex-direction: column;
     }
     #u, #e {
-        font-size: 1rem;
+        font-size: 2rem;
     }
+    .carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .carousel-item img {
+        margin: auto 0;
+      }
+      .sticky-header {
+        position: relative;
+        visibility: visible;
+        z-index: 0;
+      }
+      
+      .sticky-header .logo {
+        position: relative;
+        z-index: 1;
+      }
+      
+      .sticky-header .links{
+        position: relative;
+        z-index: 1;
+      }
+      
+      .sticky-header .links.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      #myCarousel {
+        max-height: 50vh;
+      }
 }

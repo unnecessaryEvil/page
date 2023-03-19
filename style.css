@@ -1,3 +1,36 @@
 body{
     background-color: beige;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #330033;
+    padding: 1rem;
+}
+
+.logo-text{
+    flex: 1;
+    font-family: 'Almendra Display';
+    font-weight: lighter;
+    color: whitesmoke;
+    margin: 0;
+}
+
+#logo-img{
+    text-align: center;
+}
+
+#u{
+    text-align: end;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#e{
+    text-align: start;
+    font-size: 7rem;
 }

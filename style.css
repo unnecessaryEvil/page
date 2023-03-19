@@ -11,27 +11,52 @@ a{
     font-size: 2rem;
     flex: 1;
     text-align: center;
+    border: solid gold 0.10rem;
+    border-radius: 25px;
 }
 
 a:hover{
-    background-color: #4d004d;
-    border-radius: 15%;
+    background-color: #800080;
+    border-radius: 25px;
     cursor: pointer;
+    transition: background-color 0.5s; 
 }
 
-header{
+.sticky-header{
     background-color: #330033;
     color: whitesmoke;
     font-family: 'Almendra Display';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.sticky-header.visible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sticky-header.docked {
+    position: static;
+    transform: none;
 }
 
 .logo{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: gold;
 }
 
 .links{
+    background-color: #4d004d;
     display: flex;
     justify-content: space-evenly;
 }

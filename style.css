@@ -14,7 +14,7 @@ a{
 
 a:hover{
     background-color: #4d004d;
-    border-radius: 5px;
+    border-radius: 15%;
     cursor: pointer;
 }
 
@@ -28,7 +28,6 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
 }
 
 .links{
@@ -57,11 +56,18 @@ header{
     font-size: 7rem;
 }
 
+.divider{
+    height: 1rem;
+    background-color: black;
+    border: solid #1a001a 0.05rem;
+}
+
 #myCarousel {
-    width: 70vw;
-    height: 70vh;
-    margin: 0 auto;
-    overflow: hidden; /* prevent images from overflowing outside of carousel */
+    width: 100vw;
+    height: 100vh;
+    margin: 0rem auto;
+    overflow: hidden;
+    background-color: #333333;
 }
 
 .carousel-inner {
@@ -85,10 +91,8 @@ header{
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #fff;
-    border-radius: 50%;
-    color: #000;
-    border: 1px solid #000;
+    background-color: #000;
+    border-radius: 30%;
     height: 40px;
     width: 40px;
     position: absolute;

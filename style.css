@@ -2,6 +2,7 @@ body{
     background-color: beige;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
 }
 
 a{
@@ -63,7 +64,7 @@ header{
 }
 
 #myCarousel {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0rem auto;
     overflow: hidden;
@@ -93,8 +94,8 @@ header{
 .carousel-control-next-icon {
     background-color: #000;
     border-radius: 30%;
-    height: 40px;
-    width: 40px;
+    height: 5rem;
+    width: 5rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -102,11 +103,11 @@ header{
 }
 
 .carousel-control-prev-icon {
-    left: 20px;
+    left: 5rem;
 }
 
 .carousel-control-next-icon {
-    right: 20px;
+    right: 5rem;
 }
 
 .carousel-control-prev,
@@ -120,10 +121,22 @@ header{
     background-color: #fff;
     border: 1px solid #000;
     border-radius: 50%;
-    height: 12px;
-    width: 12px;
+    height: 2rem;
+    width: 2rem;
 }
 
 .carousel-indicators .active {
     background-color: #000;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        flex-direction: column;
+    }
+    .links {
+        flex-direction: column;
+    }
+    #u, #e {
+        font-size: 1rem;
+    }
 }

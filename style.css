@@ -12,19 +12,19 @@ html body{
     text-align: center;
     border: solid gold 0.10rem;
     border-radius: 25px;
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
 .header-link:hover{
-    background-color: #800080;
+    background-color: #4b0066;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.5s; 
 }
 
 .sticky-header{
-    background-color: #330033;
+    background-color: #250033;
     color: whitesmoke;
     font-family: 'Almendra Display';
     position: fixed;
@@ -63,7 +63,7 @@ html body{
   }
 
 .links{
-    background-color: #4d004d;
+    background-color: #38004d;
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -105,7 +105,7 @@ html body{
 }
 
 .text {
-    color: #fff;
+    color: white;
     font-family: 'Amatic SC';
     font-size: 2rem;
 }
@@ -138,15 +138,15 @@ h2.text{
 .clink{
     font-size: 3rem;
     text-decoration: none;
-    color: #800080;
+    color: #700099;
 }
 
 .clink:hover{
-    color:#4d004d;
+    color:#4b0066;
 }
 
 #devlink{
-    color: #800080;
+    color: #700099;
 }
 
 #myCarousel {
@@ -178,7 +178,7 @@ h2.text{
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000;
+    background-color: black;
     border-radius: 30%;
     height: 5rem;
     width: 5rem;
@@ -204,15 +204,15 @@ h2.text{
 }
 
 .carousel-indicators li {
-    background-color: #fff;
-    border: 1px solid #000;
+    background-color: white;
+    border: 1px solid black;
     border-radius: 50%;
     height: 2rem;
     width: 2rem;
 }
 
 .carousel-indicators .active {
-    background-color: #000;
+    background-color: black;
 }
 
 @media (max-width: 767px) {

@@ -29,3 +29,35 @@ if (!isMobile) {
     prevScrollpos = currentScrollPos;
   };
 }
+
+window.onload = function() {
+
+  // Get all links with class "header-link"
+  var links = document.getElementsByClassName("header-link");
+
+  // Loop through each link
+  for (var i = 0; i < links.length; i++) {
+
+    // Add a click event listener to the link
+    links[i].addEventListener("click", function(event) {
+
+      // Prevent the link from opening a new page
+      event.preventDefault();
+
+      // Get the target div's ID from the link's href attribute
+      var targetID = this.getAttribute("href").substr(1);
+
+      // Scroll to the target div using a smooth animation
+      document.getElementById(targetID).scrollIntoView({
+        behavior: "smooth"
+      });
+      if(!isMobile){
+      setTimeout(function() {
+        header.classList.remove("visible");
+      }, 700);
+    };
+    });
+
+  }
+
+};

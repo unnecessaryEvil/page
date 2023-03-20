@@ -8,12 +8,13 @@
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Almendra Display'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amatic SC'>
     <script src="script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-dark">
     <header class="sticky-header visible">
         <div class="logo">
             <p class="logo-text" id="u">unnecessary</p>
@@ -22,11 +23,12 @@
         </div>
         <div class="links-placeholder"></div>
         <div class="links">
-            <a>ILLUSTRATIONS</a>
-            <a>CONTACT    INFO</a>
-            <a>ABOUT    ME</a>
+            <a class="header-link text" href="#myCarousel">ILLUSTRATIONS</a>
+            <a class="header-link text" href="#contact">CONTACT    INFO</a>
+            <a class="header-link text" href="#about">ABOUT    ME</a>
         </div>
     </header>
+    <div class="placeholder"></div>
     <div class="divider"></div>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
@@ -63,27 +65,24 @@
         </button>
       </div>
       <div class="divider"></div>
-      <div class="contact">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at turpis ornare, porta nibh at, cursus augue. Nullam scelerisque in nisl porta gravida. Fusce auctor augue tincidunt urna hendrerit porttitor. Nunc laoreet venenatis tortor, eu tempor nisi maximus sit amet. Donec bibendum eget augue vitae commodo. Morbi finibus vitae sapien vel aliquam. Vestibulum tempus condimentum sapien, ac ullamcorper lacus blandit eget. Nam ut mauris feugiat, luctus orci et, pellentesque felis. Proin elit ante, luctus in libero a, euismod mollis tortor. In tincidunt justo vulputate, consectetur mi id, tempus purus. Etiam a tellus in felis convallis malesuada at quis lorem. Phasellus eget velit tristique, aliquam quam sed, vestibulum lectus. </p>
+      <div id="contact" class="contact text">
+        <h2 class="text">Contacts</h2>
+        <a href="https://vk.com/unnecessaryEvil" class="clink">vk.com</a>
+        <a href="https://t.me/unnecessary_Evil" class="clink">Telegram</a>
+        <a href="https://www.instagram.com/vivelediable" class="clink">Instagram</a>
       </div>
       <div class="divider"></div>
-      <div class="about-me">
-        <h2>About Me</h2>
+      <div id="about" class="about-me text">
+        <h2 class="text">About Me</h2>
         <p>Hello, and welcome to my art page! My name is K, and I am a self-taught digital artist. I have always been fascinated by art and the way that it can convey emotions and tell stories. Over the years, I have experimented with different forms of art, including painting, drawing, and sculpture. However, it wasn't until I discovered digital art that I truly found my passion.</p>
         <p>As someone who is self-taught, I don't have a formal education in art, but I have spent countless hours practicing and honing my craft. I have learned a lot from online tutorials, forums, and other artists who have generously shared their knowledge and expertise. Although I don't have a lot of professional experience, I am always eager to learn and improve.</p>
         <p>My art style is constantly evolving, and I love to experiment with different techniques and mediums. I enjoy creating art that is colorful, expressive, and full of energy. Whether I am working on a portrait, a landscape, or an abstract piece, I always strive to create something that is visually interesting and emotionally engaging.</p>
         <p>Thank you for visiting my page, and I hope that you enjoy my art as much as I enjoy creating it. If you have any questions or comments, please don't hesitate to reach out!</p>
     </div>
-    <div class="footer">
+    <div class="divider"></div>
+    <div class="footer text">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo magna eget urna sagittis consectetur.</p>
-          </div>
-        </div>
-        <hr>
-        <p class="text-center">&copy; 2023 Art Landing Page. All Rights Reserved.</p>
+        <p class="text-center">&copy; 2023 made by <a id="devlink" href="https://github.com/unnecessaryEvil">unnecessaryEvil</a>. All Rights Reserved.</p>
       </div>
     </div>
     

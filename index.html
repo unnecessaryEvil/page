@@ -8,14 +8,83 @@
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Almendra Display'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amatic SC'>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
+<body class="bg-dark">
+    <header class="sticky-header visible">
         <div class="logo">
             <p class="logo-text" id="u">unnecessary</p>
             <img src="assets/logo.png" id="logo-img">
             <p class="logo-text" id="e">Evil</p>
         </div>
+        <div class="links-placeholder"></div>
+        <div class="links">
+            <a class="header-link text" href="#myCarousel">ILLUSTRATIONS</a>
+            <a class="header-link text" href="#contact">CONTACT    INFO</a>
+            <a class="header-link text" href="#about">ABOUT    ME</a>
+        </div>
     </header>
+    <div class="placeholder"></div>
+    <div class="divider"></div>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/gallery/img1.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery/img2.jpg" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery/img3.jpg" class="d-block w-100" alt="Image 3">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery/img4.jpg" class="d-block w-100" alt="Image 4">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/gallery/img5.jpg" class="d-block w-100" alt="Image 5">
+          </div>
+        </div>   
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="divider"></div>
+      <div id="contact" class="contact text">
+        <h2 class="text">Contacts</h2>
+        <a href="https://vk.com/unnecessaryEvil" class="clink">vk.com</a>
+        <a href="https://t.me/unnecessary_Evil" class="clink">Telegram</a>
+        <a href="https://www.instagram.com/vivelediable" class="clink">Instagram</a>
+      </div>
+      <div class="divider"></div>
+      <div id="about" class="about-me text">
+        <h2 class="text">About Me</h2>
+        <p>Hello, and welcome to my art page! My name is K, and I am a self-taught digital artist. I have always been fascinated by art and the way that it can convey emotions and tell stories. Over the years, I have experimented with different forms of art, including painting, drawing, and sculpture. However, it wasn't until I discovered digital art that I truly found my passion.</p>
+        <p>As someone who is self-taught, I don't have a formal education in art, but I have spent countless hours practicing and honing my craft. I have learned a lot from online tutorials, forums, and other artists who have generously shared their knowledge and expertise. Although I don't have a lot of professional experience, I am always eager to learn and improve.</p>
+        <p>My art style is constantly evolving, and I love to experiment with different techniques and mediums. I enjoy creating art that is colorful, expressive, and full of energy. Whether I am working on a portrait, a landscape, or an abstract piece, I always strive to create something that is visually interesting and emotionally engaging.</p>
+        <p>Thank you for visiting my page, and I hope that you enjoy my art as much as I enjoy creating it. If you have any questions or comments, please don't hesitate to reach out!</p>
+    </div>
+    <div class="divider"></div>
+    <div class="footer text">
+      <div class="container">
+        <p class="text-center">&copy; 2023 made by <a id="devlink" href="https://github.com/unnecessaryEvil">unnecessaryEvil</a>. All Rights Reserved.</p>
+      </div>
+    </div>
+    
 </body>
 </html>

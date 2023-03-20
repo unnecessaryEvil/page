@@ -1,24 +1,82 @@
-body{
-    background-color: beige;
+html body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
 }
+
+.header-link{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    flex: 1;
+    text-align: center;
+    border: solid gold 0.10rem;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-link:hover{
+    background-color: #800080;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s; 
+}
+
+.sticky-header{
+    background-color: #330033;
+    color: whitesmoke;
+    font-family: 'Almendra Display';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.sticky-header.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 
 .logo{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #330033;
-    padding: 1rem;
+    color: gold;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.logo.docked {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+.links{
+    background-color: #4d004d;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
 }
 
 .logo-text{
     flex: 1;
-    font-family: 'Almendra Display';
     font-weight: lighter;
-    color: whitesmoke;
     margin: 0;
 }
+
 
 #logo-img{
     text-align: center;
@@ -33,4 +91,177 @@ body{
 #e{
     text-align: start;
     font-size: 7rem;
+}
+
+.divider{
+    height: 0.5rem;
+    background-color: black;
+    border: solid #1a001a 0.05rem;
+}
+
+.placeholder{
+    height: 6rem;
+    background-color: black;
+}
+
+.text {
+    color: #fff;
+    font-family: 'Amatic SC';
+    font-size: 2rem;
+}
+
+h2.text{
+    font-size: 4rem;
+}
+
+.about-me{
+    padding: 0 2rem;
+}
+
+.contact{
+    background-color: #171a1c;
+    padding: 0 2rem;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    background-color: #171a1c;
+    font-size: 1.5rem;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.clink{
+    font-size: 3rem;
+    text-decoration: none;
+    color: #800080;
+}
+
+.clink:hover{
+    color:#4d004d;
+}
+
+#devlink{
+    color: #800080;
+}
+
+#myCarousel {
+    width: 100%;
+    height: 100vh;
+    margin: 0rem auto;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 30%;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.carousel-control-prev-icon {
+    left: 5rem;
+}
+
+.carousel-control-next-icon {
+    right: 5rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    height: 100%;
+    opacity: 1;
+    width: auto;
+}
+
+.carousel-indicators li {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        flex-direction: column;
+    }
+    .links {
+        flex-direction: column;
+    }
+    #u, #e {
+        font-size: 2rem;
+    }
+    .carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .carousel-item img {
+        margin: auto 0;
+      }
+      .sticky-header {
+        position: relative;
+        visibility: visible;
+        z-index: 0;
+      }
+      
+      .sticky-header .logo {
+        position: relative;
+        z-index: 1;
+      }
+      
+      .sticky-header .links{
+        position: relative;
+        z-index: 1;
+      }
+      
+      .sticky-header .links.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      #myCarousel {
+        max-height: 50vh;
+      }
+
+      .placeholder {
+        visibility: hidden;
+        height: 0;
+      }
 }

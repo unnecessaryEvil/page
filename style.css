@@ -234,6 +234,12 @@ h2.text{
       .carousel-item img {
         margin: auto 0;
       }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        visibility: hidden;
+        }
+        
       .sticky-header {
         position: relative;
         visibility: visible;
